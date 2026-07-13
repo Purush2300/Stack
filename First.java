@@ -39,6 +39,7 @@ public class First {
         st.push(30);
         st.push(40);
         st.push(50);
+        st.push(1);
         System.out.println(st.Top());
         System.out.println(st.SIZE());
         System.out.println(st.POP());
