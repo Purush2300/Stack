@@ -10,18 +10,20 @@ System.out.println(res[i]+" ");
 
     private static int[] next(int[] num1, int[] num2) {
         int[]r=new int[num1.length];
-        int s=0;
+        
         for(int i=0;i<num1.length;i++){
-            for(int j=0;j<num2.length-1;j++){
+            r[i]=-1;
+            for(int j=0;j<num2.length;j++){
                 if(num1[i]==num2[j]){
-                    if (j==num2.length-1){
-                        r[s++]=-1;
+                    for(int k=j+1;k<num2.length;k++){
+                        if(num2[k]>num1[i]){
+                            r[i]=num2[k];
+                            break;
+                        }
                     }
-                   else if(num2[j+1]>num1[i]){
-                        r[s++]=num2[j+1];
-                    }
-                    
+                     break;
                 }
+               
             }
         }
 
