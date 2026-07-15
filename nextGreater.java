@@ -1,6 +1,6 @@
 public class nextGreater {
     public static void main(String[] args) {
-        int[]num1={2,4,3};
+        int[]num1={2};
         int[]num2={1,2,3,4};
         int[]res=next(num1,num2);
         for(int i=0;i<res.length;i++){
