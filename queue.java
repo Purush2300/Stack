@@ -64,10 +64,7 @@ public class queue {
        System.out.println(q.top());
        System.out.println(q.pop());
        System.out.println(q.pop());
-       System.out.println(q.pop());
-       System.out.println( q.size());
-       System.out.println(q.top());
-       q.push(10);
+      
     q.push(20);
         q.push(30);
     }
