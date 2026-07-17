@@ -67,7 +67,7 @@ public class july17 {
         //     }
         // }
         // System.out.println(map1.isEmpty());
-        String s="aa";
+        String s="ac";
         System.out.println(s.substring(0,2));
 
         int l=0;
