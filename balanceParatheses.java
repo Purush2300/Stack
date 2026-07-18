@@ -35,7 +35,7 @@ class Gen{
 public class balanceParatheses {
  public static void main(String[] args) {
       boolean b=true;
-     String s="()[{}(])";
+     String s="()";
     Gen g=new Gen();
     for(int i=0;i<s.length();i++){
         char c=s.charAt(i);
