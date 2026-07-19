@@ -1,8 +1,22 @@
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class juky20 {
  public static void main(String[] args) {
-//    int[]arr{}
-   
-//    amstrong(amg);
+   int[]arr={153, 10, 9474, 371, 25, 407};
+  ArrayList<Integer>list= new ArrayList<>();
+   int s=0;
+   for(Integer n:arr){
+      if(amstrong(n)){
+            list.add(n);
+      }
+   }
+   Collections.sort(list, Collections.reverseOrder());
+   for(Integer k:list){
+    System.out.println(k);
+   }
  }   
 
     private static int count(int amg) {
@@ -14,7 +28,7 @@ public class juky20 {
        return cnt;
     }
 
-    private static void amstrong(int amg) {
+    private static boolean  amstrong(int amg) {
                 int total=0;
                  int orginal=amg;
                 int n=count(amg);
@@ -38,7 +52,7 @@ public class juky20 {
                     amg=amg/10;
                     n--;
             }
-            System.out.println(orginal==total);
+            return orginal==total;
 
     }
 }
