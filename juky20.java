@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class juky20 {
  public static void main(String[] args) {
-   int[]arr={153, 10, 9474, 371, 25, 407};
+   int[]arr={12, 25, 100, 200};
   ArrayList<Integer>list= new ArrayList<>();
    int s=0;
    for(Integer n:arr){
