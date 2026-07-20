@@ -1,21 +1,38 @@
 
-import java.util.HashSet;
+import java.util.HashMap;
 
 public class july21 {
     public static void main(String[] args) {
         int[]arr={100,4,200,1,3,2};
-        HashSet<Integer>set=new HashSet<>();
-        for(int num:arr){
-            set.add(num);
+        HashMap<Integer,Boolean> map1=new HashMap<>();
+        HashMap<Integer,Boolean> map2=new HashMap<>();
+
+        for(int i=0;i<arr.length;i++){
+            map1.put(arr[i],true);
         }
-       for(int n:set){
-       if(set.contains(n)){
         
-       }
-       }
+        int Longestlength=0;
+        
+        for(int i=0;i<arr.length;i++){
+
+
+            if (!map2.containsKey(arr[i])) {
+                int val=arr[i];
+                int cnt=0;
+                while (map1.containsKey(val)) {
+                map2.put(val, true);   
+                cnt++;
+                val++;
+                }
+            Longestlength=Math.max(Longestlength, cnt);
+            }
+       
+
+    } 
+  System.out.println(Longestlength);
+        }
       
     }
-}
 
 
 
