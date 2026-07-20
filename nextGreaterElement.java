@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class nextGreaterElement {
     public static void main(String[] args) {
@@ -8,27 +9,27 @@ public class nextGreaterElement {
     }
 
     private static void greater(int[] arr) {
-       ArrayList<Integer>list=new ArrayList<>();
+
+
+        Stack<Integer> st=new Stack<>();
+        ArrayList<Integer> list=new ArrayList<>();
 
 
 
-       for(int i=0;i<arr.length;i++){
-        boolean found=false;
-        for(int j=i+1;j<arr.length;j++){
-            if(arr[j]>arr[i]){
-               
-                list.add(arr[j]);
-                found=true;
-               
-                break;
-                
-            }
-        
-        }
-        if(!found){
+        for(int i=arr.length-1;i>=0;i--){
+           
+           while(!st.empty()&&st.peek()<=arr[i]){
+            st.pop();
+           }
+           if (st.isEmpty()) {
             list.add(-1);
+           } else {
+            list.add(st.peek());
+            
+           }
+           st.push(arr[i]);
         }
-       }
-       System.out.println(list);
+     
+        System.out.println(list);
     }
 }
