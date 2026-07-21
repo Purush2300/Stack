@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class july2 {
     public static void main(String[] args) {
-        int[]arr={1,2,1};
+        int[]arr={1,2,1,0};
     //     Stack<Integer>s=new Stack<>();
         ArrayList<Integer>al=new ArrayList<>();
     //     for (int i = arr.length-1; i>=0; i--) {
