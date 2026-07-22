@@ -7,15 +7,17 @@ public class july22 {
         Stack<Integer>s=new Stack<>();
         ArrayList<Integer> list=new ArrayList<>();
 
-        for(int i=0;i<arr.length;i++){
-            int ans=-1;
-            for(int j=i+1;j<arr.length;j++){
-                if(arr[j]<arr[i]){
-                    ans=arr[j];
-                    break;
-                }
+        for(int i=arr.length-1;i>=0;i--){
+            while (!s.isEmpty()&&s.peek()>=arr[i]) { 
+                s.pop();
             }
-            list.add(ans);
+            if(s.isEmpty()){
+                list.add(-1);
+            }
+            else{
+                list.add(s.peek());
+            }
+            s.push(arr[i]);
         }
         System.out.println(list);
     }
