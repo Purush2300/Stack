@@ -7,7 +7,7 @@ public class july22 {
         Stack<Integer>s=new Stack<>();
         ArrayList<Integer> list=new ArrayList<>();
 
-        for(int i=arr.length-1;i>=0;i--){
+        for(int i=0;i<arr.length;i++){
             while (!s.isEmpty()&&s.peek()>=arr[i]) { 
                 s.pop();
             }
