@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class july23 {
     public static void main(String[] args) {
-        int[]arr={73,74,75,71,69,72,76,73};
+        int[]arr={73,74,75,71,69,72,73};
         Stack<Integer>s=new Stack<>();
         ArrayList<Integer>list=new ArrayList<>();
 
