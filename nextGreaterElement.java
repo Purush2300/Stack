@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class nextGreaterElement {
     public static void main(String[] args) {
-        int[]arr={1,3,2,4};
+        int[]arr={9,25,234,234,56,45};
         greater(arr);
     }
 
