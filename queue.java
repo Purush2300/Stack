@@ -60,6 +60,9 @@ public class queue {
         q.push(10);
         q.push(20);
         q.push(30);
+         q.push(10);
+        q.push(20);
+        q.push(30);
        System.out.println( q.size());
        System.out.println(q.top());
        System.out.println(q.pop());
